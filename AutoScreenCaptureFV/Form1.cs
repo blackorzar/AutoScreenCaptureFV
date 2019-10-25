@@ -59,10 +59,19 @@ namespace WindowsFormsApplication1
 
         private Bitmap Get_screen()
         {
+            /*
             Size s = Screen.PrimaryScreen.Bounds.Size;
             Bitmap bt = new Bitmap(s.Width, s.Height);
             Graphics g = Graphics.FromImage(bt);
             g.CopyFromScreen(0, 0, 0, 0, s);
+             */
+            int screenLeft = SystemInformation.VirtualScreen.Left;
+            int screenTop = SystemInformation.VirtualScreen.Top;
+            int screenWidth = SystemInformation.VirtualScreen.Width;
+            int screenHeight = SystemInformation.VirtualScreen.Height;
+            Bitmap bt = new Bitmap(screenWidth, screenHeight);
+            Graphics g = Graphics.FromImage(bt);
+            g.CopyFromScreen(screenLeft, screenTop, 0, 0, bt.Size);
             return bt;
         }
 

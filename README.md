@@ -26,3 +26,4 @@ Auto Screen Capture FV has been tested on Windows 7, and Windows 10.
 
 - [Installer](http://famzah.net/download/AutoScreenCaptureFV/AutoScreenCaptureFV-latest.rar) (there is an uninstaller in the Control Panel)
    - A list with [all released versions](http://famzah.net/download/AutoScreenCaptureFV/)
+- [Source](https://github.com/famzah/AutoScreenCaptureFV)
